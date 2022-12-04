@@ -1,4 +1,4 @@
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: colorful
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/timofurrer/colorful/archive/v{{ version }}.zip
-  sha256: 35a7480b1abfcd1306188e8aa82edf5c6dcff5cefb697e04f9126b8fa6e4635f 
+  sha256: 070ea06f9ccf6fb39f3a62da02f1514972157d3771643cefca8373b441d46aba
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.4
     - colorama
-    
+
 test:
   imports:
     - colorful
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Terminal string styling done right, in Python'
+  summary: Terminal string styling done right, in Python
   description: |
     Terminal string styling done right, in Python.
     Key Features:
