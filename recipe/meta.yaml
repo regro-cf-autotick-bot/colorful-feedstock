@@ -1,4 +1,4 @@
-{% set version = "0.5.4" %}
+{% set version = "0.5.6" %}
 
 package:
   name: colorful
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/timofurrer/colorful/archive/v{{ version }}.zip
-  sha256: 35a7480b1abfcd1306188e8aa82edf5c6dcff5cefb697e04f9126b8fa6e4635f 
+  sha256: 63c385f4e06914a3a8b942810c432f71ad8528738ba9d486cbdf46a5208d84cc
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.4
     - colorama
-    
+
 test:
   imports:
     - colorful
