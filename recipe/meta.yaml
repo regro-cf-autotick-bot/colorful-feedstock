@@ -10,19 +10,21 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 # Need these up here for conda-smithy to handle them properly.
 requirements:
   host:
-    - python >=3.4
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.4
+    - python >={{ python_min }}
     - colorama
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - colorful
 
